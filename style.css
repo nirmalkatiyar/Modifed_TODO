@@ -41,13 +41,16 @@ body{
   border-radius: 22px;
   border-color:transparent;
   outline:transparent;
-  
+  height:30px;
+  margin:5px;
 }
 #priority{
   margin-left:10px;
   border-radius:22px;
   border-color:transparent;
   outline:transparent;
+  height:30px;
+  margin:5px;
 }
 #button{
   justify-items: center;
@@ -65,4 +68,40 @@ body{
 #button:hover{
   background-color:mediumblue;
 }
+ #todolist {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close {
+  position:absolute;
+  right:500px ;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+  size: 10px;
+}
+
+ul li:hover{
+  background: #FFB344;
+}
+ul li.checked {
+  background: rgb(0, 197, 82);
+  color: rgb(246, 238, 238);
+  text-decoration: line-through;
+}
+
 
