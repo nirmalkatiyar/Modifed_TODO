@@ -36,8 +36,18 @@ body{
   border-radius:5px;
   color:#00A19D;
 }
-.input{
+#enterTask{
   text-align: center;
+  border-radius: 22px;
+  border-color:transparent;
+  outline:transparent;
+  
+}
+#priority{
+  margin-left:10px;
+  border-radius:22px;
+  border-color:transparent;
+  outline:transparent;
 }
 #button{
   justify-items: center;
@@ -56,4 +66,3 @@ body{
   background-color:mediumblue;
 }
 
-}
