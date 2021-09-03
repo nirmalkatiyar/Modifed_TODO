@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="scriptsheet" href="index.js">
     <title>To Do</title>
 </head>
 
@@ -17,17 +18,23 @@
         <header class="header">
             <strong><h1>To Do App</h1></strong>
         </header>
-        <hr style="height:2px;border:none;color:rgb(7, 5, 5);background-color:#333;" />
-        <div class="input">
-               <span> <input type="text" placeholder="Add your task here...">
+        <hr style="height:2px;border:none;color:rgb(8, 8, 8);background-color:#333;" />
+        <div >
+               <span> <input id="enterTask" type="text" placeholder="Add your task here...">
                 <input id="priority" type="number" placeholder="Put priority of task..."></span>
         </div>
         <br>
-        <button id="button">Add</button>
+        <button onclick="newElement()" id="button">Add</button>
         </form>
         
-        <div class="todo-container text-center">
-            <ul class="todo-list"></ul>
+        <div class="list">
+            <ul id="todo-list"></ul>
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
         </div>
     </div>
 </body>
